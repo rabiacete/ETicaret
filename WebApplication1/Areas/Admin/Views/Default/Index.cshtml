@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var user = Session["AdminLoginUser"] as And.Eticaret.UI.Web.Models.Sınıflar.User;
+}
+
+ <h2>Sayın @user.Name @user.LastName Admine Hoşgeldiniz</h2>
+
+              <ul>
+                  <li>
+                      <a href="/Admin/Users">Üyeler Yönetimi</a>
+
+
+                  </li>
+                  <li>
+
+                      <a href="/Admin/Products">Ürün Yönetimi</a>
+
+                  </li>
+
+                  <li>
+
+                      <a href="/Admin/Categories">Kategori Yönetimi</a>
+
+                  </li>
+              </ul>
